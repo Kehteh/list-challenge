@@ -9,7 +9,7 @@ def add_chocolate(shopping_list: list):
     Returns:
         - the same list, with the string "chocolate" added to the end
     """
-    pass
+    return
 
 def lou_bega(lyrics_list: list):
     """This function accepts a list of strings and adds the words 
