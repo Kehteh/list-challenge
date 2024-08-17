@@ -9,7 +9,11 @@ def add_chocolate(shopping_list: list):
     Returns:
         - the same list, with the string "chocolate" added to the end
     """
-    return
+    shopping_list.append("chocolate")
+    print(shopping_list)
+    return shopping_list
+
+add_chocolate(["quinoa, kale, beepollen, konjac noodles"])
 
 def lou_bega(lyrics_list: list):
     """This function accepts a list of strings and adds the words 
@@ -36,7 +40,17 @@ def lou_bega(lyrics_list: list):
             "A little bit of Rita's all I need"
         ]
     """
-    pass
+    for prefix in range(len(lyrics_list)):
+        lyrics_list[prefix] = "A little bit of " + lyrics_list[prefix]
+    return lyrics_list
+
+lyrics_list = [
+    "Monica in my life", 
+    "Erica by my side", 
+    "Rita's all I need"
+]
+
+print(lou_bega(lyrics_list))
 
 def assemble_guest_list():
     """This function repeatedly prompts the user for the name of a dinner guest.

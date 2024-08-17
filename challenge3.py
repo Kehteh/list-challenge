@@ -9,5 +9,13 @@ def assemble_guest_list():
     Returns:
         - a list of strings supplied by the user
     """
+    guest_list = []
     guest_name = input("Please enter guest name: ")
-    return(guest_name)
+
+    while guest_name != "":
+        guest_list.append(guest_name)
+        guest_name = input("Please enter a guest name: ")
+
+    return guest_list
+assemble_guest_list()
+    
